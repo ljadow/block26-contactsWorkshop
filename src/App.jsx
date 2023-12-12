@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       {(selectedContactId) ?
-        (<div><SelectedContact selectedContactId={selectedContactId} /></div>)
+        (<div><SelectedContact selectedContactId={selectedContactId} setSelectedContactId={setSelectedContactId} /></div>)
         : (<ContactList selectedFn={setSelectedContactId} />)}
     </div>
   )
